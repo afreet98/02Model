@@ -146,14 +146,14 @@ public class ProductDAO {
 		con.close();
 	}
 	
-	public Product findProduct(int Product) throws Exception {
+	public Product findProduct(int ProdNo) throws Exception {
 		
 		Connection con = DBUtil.getConnection();
 
 		String sql = "select * from product where prod_no=?";
 		
 		PreparedStatement stmt = con.prepareStatement(sql);
-		stmt.setInt(1, Product);
+		stmt.setInt(1, ProdNo);
 
 		ResultSet rs = stmt.executeQuery();
 

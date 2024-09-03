@@ -28,8 +28,8 @@ public class ProductServiceImpl implements ProductService{
 		productDAO.updateProduct(product);
 	}
 	
-	public Product getProduct(int Product) throws Exception {
-		return productDAO.findProduct(Product);
+	public Product getProduct(int ProdNo) throws Exception {
+		return productDAO.findProduct(ProdNo);
 	}
 
 }
